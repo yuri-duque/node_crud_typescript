@@ -6,25 +6,25 @@ const router = Router();
 router.post(path, (request: Request, response: Response): void => {
   const { body } = request;
 
-  response.success('sucesso', body);
+  response.success('success', body);
 });
 
 router.put(path, (request: Request, response: Response): void => {
   const { body } = request;
 
-  response.error('sucesso', body);
+  response.error('error', body);
 });
 
 router.delete(path, (request: Request, response: Response): void => {
   const { body } = request;
 
-  response.badRequest('sucesso', body);
+  response.badRequest('badRequest', body);
 });
 
 router.get(path, (request: Request, response: Response): void => {
   const { body } = request;
 
-  response.unauthorized('sucesso', body);
+  response.unauthorized('unauthorized', body);
 });
 
 export default router;
